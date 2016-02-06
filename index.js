@@ -41,7 +41,7 @@ exports.handler = function (event, context) {
         bcc: bcc ? bcc : '',
         to: to ? to : '',
         cc: cc ? cc : '',
-        attachments: attachments ? attachments : ''
+        attachments: attachments ? attachments : []
     };
     
     var mail = mailcomposer(mailOptions);
